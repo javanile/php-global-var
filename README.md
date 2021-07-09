@@ -10,7 +10,7 @@ composer require javanile/php-global-var
 
 ## Usage
 
-```diff
+```php
 <?php
 
 function getNewEntity() 
