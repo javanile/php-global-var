@@ -15,7 +15,13 @@ composer require javanile/php-global-var
 
 function getNewEntity() 
 {
-  -global $entityManager;
-  +$entityManager = get_global_var('entityManager');
+   // Replace the following line
+   global $entityManager;
+   // With `get_global_var` call
+   $entityManager = get_global_var('entityManager');
+   
+   .
+   .
+   .
 }
 ```
